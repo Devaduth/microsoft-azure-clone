@@ -9,6 +9,12 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
       rel="stylesheet"
     />
+    <style>
+      .hero-section {
+        background-image: url(./images/hero.jpg);
+        background-size: contain;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -116,6 +122,7 @@
           </div>
         </div>
       </div>
+      <!-- mobile navbar -->
       <div class="mobile-nav md:hidden">
         <div class="flex">
           <i class="fas fa-search text-md font-light ml-3 mt-4"></i>
@@ -131,5 +138,23 @@
         </h1>
       </div>
     </header>
+
+    <main>
+      <div class="hero-section h-screen max-w-screen">
+        <div class="flex flex-col w-xl ml-16">
+          <h2>AZURE. LIMITLESS INNOVATION.</h2>
+          <h1>Code. Connect. Grow.</h1>
+          <h6>
+            Immerse yourself in the latest AI capabilities featured at Microsoft
+            Build. Pay as you go or try Azure free for up to 30 days. There’s no
+            upfront commitment—cancel anytime.
+          </h6> 
+          <div class="flex flex-row">
+            <button>Get started with Azure</button>
+            <button>Explore Azure AI Foundary</button>
+          </div>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
