@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Microsoft Azure Navbar</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <!-- desktop navbar -->
+      <div class="bg-white border-b hidden md:block border-gray-200">
+        <div class="max-w-7xl mx-auto pl-9 pr-[3.2rem] py-1">
+          <div class="flex items-center justify-between h-12">
+            <!-- Left side - Logo and Navigation -->
+            <div class="flex items-center space-x-5">
+              <!-- Microsoft Logo -->
+              <img
+                src="https://uhf.microsoft.com/images/microsoft/RE1Mu3b.png"
+                class="h-1.4rem w-[6.5rem]"
+                alt=""
+              />
+              <div class="h-6 w-[2px] bg-gray-900 translate-x-2"></div>
+              <h1 class="text-gray-800 font-semibold translate-x-2 text-lg">
+                Azure
+              </h1>
+              <div class="flex items-center translate-x-1 space-x-[1.8rem]">
+                <a
+                  href="#"
+                  class="text-gray-800 hover:text-gray-900 text-xs font-medium flex items-end"
+                >
+                  Explore
+                </a>
+                <a
+                  href="#"
+                  class="text-gray-800 hover:text-gray-900 gap-1 text-xs flex items-end"
+                >
+                  Products
+                  <i class="fas fa-chevron-down ml-1 text-[0.5rem]"></i>
+                </a>
+                <a
+                  href="#"
+                  class="text-gray-800 hover:text-gray-900 gap-1 text-xs flex items-end"
+                >
+                  Solutions
+                  <i class="fas fa-chevron-down ml-1 text-[0.5rem]"></i>
+                </a>
+                <a
+                  href="#"
+                  class="text-gray-800 hover:text-gray-900 gap-1 text-xs flex items-end"
+                >
+                  Pricing
+                  <i class="fas fa-chevron-down ml-1 text-[0.5rem]"></i>
+                </a>
+                <a
+                  href="#"
+                  class="text-gray-800 hover:text-gray-900 gap-1 text-xs hidden xl:flex items-end"
+                >
+                  More <i class="fas fa-chevron-down ml-1 text-[0.5rem]"></i>
+                </a>
+                <a
+                  href="#"
+                  class="text-gray-800 hover:text-gray-900 gap-1 text-xs flex xl:hidden items-end"
+                >
+                  Partners
+                  <i class="fas fa-chevron-down ml-1 text-[0.5rem]"></i>
+                </a>
+                <a
+                  href="#"
+                  class="text-gray-800 hover:text-gray-900 gap-1 text-xs flex xl:hidden items-end"
+                >
+                  Resources
+                  <i class="fas fa-chevron-down ml-1 text-[0.5rem]"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Right side - Search, Learn, Support, etc. -->
+            <div class="flex items-center space-x-4">
+              <button class="text-gray-600 hover:text-gray-800">
+                <i class="fas fa-search text-sm"></i>
+              </button>
+              <a
+                href="#"
+                class="text-gray-700 hover:text-gray-900 text-xs hidden xl:block"
+              >
+                Learn
+              </a>
+              <a
+                href="#"
+                class="text-gray-700 hover:text-gray-900 text-xs hidden xl:block"
+              >
+                Support
+              </a>
+              <a
+                href="#"
+                class="text-gray-700 hover:text-gray-900 text-xs hidden xl:block"
+              >
+                Contact Sales
+              </a>
+              <button
+                class="hidden xl:block bg-blue-600 hover:bg-blue-700 text-white px-2 py-1 rounded text-sm font-medium"
+              >
+                Get started with Azure
+              </button>
+              <button
+                class="hidden xl:block border border-gray-800 hover:border-gray-800 text-gray-700 px-2 py-1 rounded text-sm"
+              >
+                Sign in
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mobile-nav md:hidden">
+        <div class="flex">
+          <i class="fas fa-search text-md font-light ml-3 mt-4"></i>
+          <img
+            src="https://uhf.microsoft.com/images/microsoft/RE1Mu3b.png"
+            class="mx-auto mt-3 mb-6 h-1.4rem w-[6.5rem]"
+            alt=""
+          />
+        </div>
+        <hr class="text-gray-300" />
+        <h1 class="font-semibold ml-3 mt-2">
+          Azure <i class="fas fa-chevron-down ml-1 text-sm"></i>
+        </h1>
+      </div>
+    </header>
+  </body>
+</html>
