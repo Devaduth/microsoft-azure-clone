@@ -10,13 +10,31 @@
       rel="stylesheet"
     />
     <style>
+      *{
+        font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+      }
       .hero-section {
-        background-image: url(./images/hero.jpg);
-        background-size: contain;
+        background-image: url(images/hero.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat; 
+      }
+      @media (max-width: 860px) {
+        .hero-section {
+          background-image: none;
+        }
+        .hero-text-container{
+          margin: 2rem 3rem 3rem 3rem;
+        }
+      }
+      @media (max-width:550px){
+        .hero-text-container{
+          margin: 2rem 1rem 3rem 1rem;
+        }
       }
     </style>
   </head>
-  <body>
+  <body class="font-sans">
     <header>
       <!-- desktop navbar -->
       <div class="bg-white border-b hidden md:block border-gray-200">
@@ -140,18 +158,44 @@
     </header>
 
     <main>
-      <div class="hero-section h-screen max-w-screen">
-        <div class="flex flex-col w-xl ml-16">
-          <h2>AZURE. LIMITLESS INNOVATION.</h2>
-          <h1>Code. Connect. Grow.</h1>
-          <h6>
+      <div class="hero-section grid bg-section-800 md:bg-transparent  grid-cols-1 md:grid-cols-2 min-h-screen md:px-18 md:py-40 w-full">
+        <img src="images/hero.jpg" class="md:hidden" alt="" />
+        <div class="flex flex-col hero-text-container max-w-2xl">
+          <!-- Tagline -->
+          <h3
+            class="text-blue-200 text-xs  font-semibold tracking-widest  uppercase"
+          >
+            AZURE. LIMITLESS INNOVATION.
+          </h3>
+
+          <!-- Main Heading -->
+          <h1
+            class="text-white text-[2.5rem] mt-3 font-semibold leading-tight "
+          >
+            Code. Connect. Grow.
+          </h1>
+
+          <!-- Description -->
+          <h5
+            class="text-blue-100 text-base text-[16px] mt-5 leading-relaxed  font-normal"
+          >
             Immerse yourself in the latest AI capabilities featured at Microsoft
-            Build. Pay as you go or try Azure free for up to 30 days. There’s no
+            Build. Pay as you go or try Azure free for up to 30 days. There's no
             upfront commitment—cancel anytime.
-          </h6> 
-          <div class="flex flex-row">
-            <button>Get started with Azure</button>
-            <button>Explore Azure AI Foundary</button>
+          </h5>
+
+          <!-- Buttons -->
+          <div class="flex flex-col smflex-row mt-7   md:mt-7 sm:flex-row gap-3">
+            <button
+              class="bg-blue-200 px-3 py-4 hover:bg-blue-100 text-slate-900  rounded-lg font-semibold text-sm transition-colors"
+            >
+              Get started with Azure
+            </button>
+            <button
+              class="border-2 px-3 py-4 border-blue-400 text-blue-300 hover:bg-blue-400 hover:text-slate-900  rounded-lg font-semibold text-sm  transition-all"
+            >
+              Explore Azure AI Foundry
+            </button>
           </div>
         </div>
       </div>

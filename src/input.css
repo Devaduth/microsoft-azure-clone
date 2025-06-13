@@ -2,5 +2,7 @@
 @tailwind utilities;
 
 @theme{
-    --breakpoint-md:850px;
+    --breakpoint-md:860px;
+    --brakpoint-sm:540px;
+    --color-section-800 : #002948;
 }
